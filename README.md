@@ -40,7 +40,7 @@ Jimi uses an optional local GGUF model through `llama.cpp`, supports document re
 interface for text generation, document Q&A, semantic indexing, prompt administration, and database
 operations.
 
-[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0078FC?style=for-the-badge&logo=github)]([https://YOUR-GITHUB-PAGES-URL](https://is-leeroy-jenkins.github.io/Jimi/))
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0078FC?style=for-the-badge&logo=github)](https://is-leeroy-jenkins.github.io/jimi/))
 
 
 ![](https://github.com/is-leeroy-jenkins/Jimi/blob/main/resources/images/Jimi-functionality.gif)
