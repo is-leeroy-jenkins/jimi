@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jimi-py"
+version = "0.1.0"
+description = "Gemini-powered Streamlit application for chat, multimodal analysis, and document retrieval"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [{name = "Terry Eppler"}]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/is-leeroy-jenkins/jimi"
+Documentation = "https://is-leeroy-jenkins.github.io/jimi/"
+Issues = "https://github.com/is-leeroy-jenkins/jimi/issues"
+
+[project.scripts]
+jimi = "jimi.cli:desktop"
+jimi-browser = "jimi.cli:main"
+
+[tool.setuptools]
+packages = ["jimi"]
+package-dir = {jimi = "."}
+include-package-data = false
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-runtime.txt"]}
+
+[tool.setuptools.package-data]
+jimi = ["resources/**/*.png", "resources/**/*.ico", ".streamlit/config.toml"]
+
