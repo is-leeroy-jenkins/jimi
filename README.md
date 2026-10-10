@@ -3,27 +3,27 @@
 ![](https://github.com/is-leeroy-jenkins/Jimi/blob/main/resources/images/jimi_project.png)
 
 <p align="left">
-  <a href="#-overview">Overview</a> 
+  <a href="#-overview">Overview</a>
   &bull;
-  <a href="#-features">Features</a> 
+  <a href="#-features">Features</a>
   &bull;
-  <a href="#-application-modes">Modes</a> 
+  <a href="#-application-modes">Modes</a>
   &bull;
-  <a href="https://github.com/is-leeroy-jenkins/Jimi/blob/main/requirements.txt">Requirements</a> 
+  <a href="https://github.com/is-leeroy-jenkins/Jimi/blob/main/requirements.txt">Requirements</a>
   &bull;
-  <a href="#-custom--llm">LLM</a> 
+  <a href="#-custom--llm">LLM</a>
   &bull;
-  <a href="#-installation">Installation</a> 
+  <a href="resources/installation.md">Installation</a>
   &bull;
-  <a href="#-running-the-streamlit-application">Run</a> 
+  <a href="#-running-the-streamlit-application">Run</a>
   &bull;
-  <a href="#%EF%B8%8F-configuration">Configuration</a> 
+  <a href="#%EF%B8%8F-configuration">Configuration</a>
   &bull;
-  <a href="#-design-and-architecture">Architecture</a> 
+  <a href="#-design-and-architecture">Architecture</a>
   &bull;
-  <a href="#-capabilities">Capabilities</a> 
+  <a href="#-capabilities">Capabilities</a>
   &bull;
-  <a href="#%EF%B8%8F-data-management">Data</a> 
+  <a href="#%EF%B8%8F-data-management">Data</a>
   &bull;
 </p>
 
@@ -677,3 +677,16 @@ Jimi exposes the following active runtime parameters in the UI and footer:
 
 Jimi is published under the [MIT License](https://github.com/is-leeroy-jenkins/Jimi/blob/main/LICENSE).
 
+
+## PyPI application
+
+```powershell
+python -m pip install jimi-py
+jimi
+```
+
+`jimi` opens the tabless Windows WebView2 window by default.
+`jimi-browser` opens standard browser mode. Python 3.11–3.12 is supported.
+The distribution is `jimi-py`; the import is `jimi`.
+Set `GEMINI_API_KEY` before using Gemini features. Windows requires WebView2 Runtime.
+See [installation](resources/installation.md) and [publication](resources/pypi-release.md).
